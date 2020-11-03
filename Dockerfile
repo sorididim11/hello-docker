@@ -8,4 +8,6 @@ RUN javac -d bin src/HelloDocker.java
 
 EXPOSE 80 8089
 
+VOLUME ["/data/myvol"]
+
 ENTRYPOINT ["java", "-cp", "bin", "HelloDocker"]
