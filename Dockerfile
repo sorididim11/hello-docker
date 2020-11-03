@@ -6,6 +6,6 @@ copy HelloDocker.java /data/src/HelloDocker.java
 WORKDIR /data
 RUN javac -d bin src/HelloDocker.java
 
-EXPOSE 80 8080
+EXPOSE 80 8089
 
 ENTRYPOINT ["java", "-cp", "bin", "HelloDocker"]
